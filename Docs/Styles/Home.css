@@ -21,15 +21,15 @@
 
 .swiper-slide.swiper-slide-active {
     --tw-border-opacity: 1 !important;
-    border-color: rgb(242 112 76 / var(--tw-border-opacity)) !important;
+    border-color: rgb(10 58 34 / var(--tw-border-opacity)) !important;
 }
 
 .swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
     --tw-text-opacity: 1;
-    color: rgb(242 112 76 / var(--tw-text-opacity));
+    color: rgb(10 58 34 / var(--tw-text-opacity));
 }
 
 .swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
     --tw-text-opacity: 1;
-    color: rgb(242 112 76 / var(--tw-text-opacity));
+    color: rgb(10 58 34 / var(--tw-text-opacity));
 }
