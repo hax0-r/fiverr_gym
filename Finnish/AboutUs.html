@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./Docs/Styles/global.css">
-    <link rel="stylesheet" href="./Docs/Styles/About.css">
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <link rel="stylesheet" href="../Docs/Styles/About.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,52 +20,53 @@
 <body>
 
     <div style="width: 0;" id="resNav"
-        class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
-        <div class="">
-            <div class="flex p-5 items-center justify-between">
-                <a href="./index.html">
-                    <img src="./Docs/Assets/logo.png" class="h-9" alt="">
+    class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
+    <div class="">
+        <div class="flex p-5 items-center justify-between">
+            <a href="./fi.html">
+                <img src="../Docs/Assets/logo.png" class="h-9" alt="">
+            </a>
+            <i id="closeNav" class="fa-solid fa-x text-xl"></i>
+        </div>
+
+        <div class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 justify-between h-[80vh] overflow-auto">
+            <ul class="  flex-col gap-8 flex ">
+
+                <li> <a href="./fi.html" class="hover:text-[#0a3a22] transition-all duration-500">
+                    Maison</a>
+                </li>
+                <li> <a href="./AboutUs.html" class="hover:text-[#0a3a22] transition-all duration-500">
+                    À propos de nous</a>
+                </li>
+                <li> <a href="./Services.html" class`="hover:text-[#0a3a22] transition-all duration-500">
+                        Services</a>
+                </li>
+                <li> <a href="./Contact.html" class="hover:text-[#0a3a22] transition-all duration-500"> Rejoignez-nous
+                    maintenant</a></li>
+                <li> <a href="./Gallery.html" class="hover:text-[#0a3a22] transition-all duration-500"> Galerie</a>
+                </li>
+            </ul>
+
+            <div class=" space-y-2">
+                <a href="" class="flex items-center gap-2 ">
+                    <i class="fa-solid text-[#0a3a22] text-lg fa-mobile-screen-button"></i>
+                    <p>+1 (123) 456-7890</p>
                 </a>
-                <i id="closeNav" class="fa-solid fa-x text-xl"></i>
-            </div>
+                <a href="mailto:info@yourgymname.com" class="flex items-center gap-2 ">
+                    <i class="fa-regular text-[#0a3a22] text-lg fa-envelope"></i>
+                    <p>info@yourgymname.com</p>
+                </a>
+                <a href="" class="flex items-center gap-2 ">
+                    <i class="fa-solid text-[#0a3a22] text-lg fa-location-dot"></i>
+                    <p class="text-wrap">123 Fitness Street, Workout City, GymState, 12345</p>
+                </a>
 
-            <div class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 justify-between h-[80vh] overflow-auto">
-                <ul class="  flex-col gap-8 flex ">
+                <p class="py-2 font-medium">Links :</p>
 
-                    <li> <a href="./index.html" class="hover:text-[#0a3a22] transition-all duration-500">
-                            Home</a>
-                    </li>
-                    <li> <a href="./AboutUs.html" class="hover:text-[#0a3a22] transition-all duration-500">
-                            About Us</a>
-                    </li>
-                    <li> <a href="./services.html" class="hover:text-[#0a3a22] transition-all duration-500">
-                            Services</a>
-                    </li>
-                    <li> <a href="./contactUs.html" class="hover:text-[#0a3a22] transition-all duration-500"> Contact
-                            Us</a></li>
-                    <li> <a href="./Gallery.html" class="hover:text-[#0a3a22] transition-all duration-500"> Gallery</a>
-                    </li>
-                </ul>
+                <div class="flex items-center gap-3 pb-2">
 
-                <div class=" space-y-2">
-                    <a href="" class="flex items-center gap-2 ">
-                        <i class="fa-solid text-[#0a3a22] text-lg fa-mobile-screen-button"></i>
-                        <p>+1 (123) 456-7890</p>
-                    </a>
-                    <a href="mailto:info@yourgymname.com" class="flex items-center gap-2 ">
-                        <i class="fa-regular text-[#0a3a22] text-lg fa-envelope"></i>
-                        <p>info@yourgymname.com</p>
-                    </a>
-                    <a href="" class="flex items-center gap-2 ">
-                        <i class="fa-solid text-[#0a3a22] text-lg fa-location-dot"></i>
-                        <p class="text-wrap">123 Fitness Street, Workout City, GymState, 12345</p>
-                    </a>
-
-                    <p class="py-2 font-medium">Links :</p>
-
-                    <div class="flex items-center gap-3 pb-2">
-
-                        <a href="https://fi.linkedin.com/in/matej-vacek-8b482074?trk=people-guest_people_search-card" target="_blank"
+                    <a href="https://fi.linkedin.com/in/matej-vacek-8b482074?trk=people-guest_people_search-card"
+                        target="_blank"
                         class="flex items-center justify-center w-10 h-10 rounded-full border-[#0a3a22] text-[#0a3a22] border-2">
                         <i class="fa-brands fa-instagram text-2xl"></i>
                     </a>
@@ -74,57 +75,56 @@
                         <i class="fa-brands fa-linkedin text-2xl"></i>
                     </a>
 
-                    </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </div>
+</div>
 
     <div class=" w-full"
-        style="background: linear-gradient(rgba(0, 0, 0, 0.768),rgba(0, 0, 0, 0.768)),url(./Docs/Assets/about-bg.webp) center/cover no-repeat;">
+        style="background: linear-gradient(rgba(0, 0, 0, 0.768),rgba(0, 0, 0, 0.768)),url(../Docs/Assets/about-bg.webp) center/cover no-repeat;">
         <div class=" w-full">
             <div class="flex items-center justify-between max-w-7xl w-full mx-auto p-5">
-                <a href="./index.html">
-                    <img src="./Docs/Assets/logo.png" class="md:h-16 h-12" alt="">
+                <a href="./fi.html">
+                    <img src="../Docs/Assets/logo.png" class="md:h-16 h-12" alt="">
                 </a>
                 <div class="flex items-center gap-3">
                     <ul class="hidden items-center justify-center gap-8 lg:flex ">
-                        <li> <a href="./index.html"
+                        <li> <a href="./fi.html"
                                 class="hover:text-[#c0ffdd] text-white cursor-pointer transition-all duration-500">
-                                Home</a>
+                                Maison</a>
                         </li>
                         <li> <a href="./AboutUs.html"
                                 class="hover:text-[#c0ffdd] text-white cursor-pointer transition-all duration-500">
-                                About
-                                Us</a></li>
-                        <li> <a href="./services.html"
+                                À propos de nous</a></li>
+                        <li> <a href="./Services.html"
                                 class="hover:text-[#c0ffdd] text-white cursor-pointer transition-all duration-500">
                                 Services</a></li>
                         <li> <a href="./Gallery.html"
                                 class="hover:text-[#c0ffdd] text-white cursor-pointer transition-all duration-500">
-                                Gallery</a></li>
-                        <a href="./contactUs.html">
+                                Galerie</a></li>
+                        <a href="./Contact.html">
                             <button
-                                class="bg-transparent border border-2 border-white rounded-lg px-6 py-2.5 text-white font-medium hover:bg-white hover:text-black transition-all duration-500">Join
-                                Us Now</button>
+                                class="bg-transparent border border-2 border-white rounded-lg px-6 py-2.5 text-white font-medium hover:bg-white hover:text-black transition-all duration-500">Rejoignez-nous
+                                maintenant</button>
                         </a>
                     </ul>
                     <div class=" group cursor-pointer">
                         <div class="py-1">
                             <div class="flex rounded-lg  p-3 items-center gap-2 border-2 border-gray-200">
-                                <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
+                                <img src="https://flagcdn.com/w40/fi.png" alt="fi Flag" class="w-6 h-4">
                                 <i
                                     class="fa-solid group-hover:rotate-180 transition-all duration-500 fa-angle-down text-white"></i>
                             </div>
                         </div>
                         <div
                             class="border-2 rounded-lg overflow-hidden fadeIn  group-hover:block hidden  absolute border-white">
-                            <a href="./Finnish/AboutUs.html"
+                            <a href="../AboutUs.html"
                                 class="flex p-[7px] items-center gap-2 transition-all duration-500 hover:bg-[#ffffff27]">
-                                <img src="https://flagcdn.com/w40/fi.png" alt="fi Flag" class="w-6 h-4">
-                                <p class="text-white">Fi...</p>
+                                <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
+                                <p class="text-white">Us...</p>
                             </a>
                         </div>
                     </div>
@@ -139,11 +139,12 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
                 <h1
                     class="max-w-2xl mx-auto text-center  font-bold text-4xl  text-white mb-5 md:text-5xl md:leading-normal">
-                    Your <span class="text-[#c0ffdd]"> Fitness Journey </span> Starts Here
+                    <span class="text-[#c0ffdd]"> Kuntomatkasi </span> alkaa tästä
                 </h1>
-                <p class="max-w-2xl mx-auto text-center text-base font-normal leading-7 text-gray-300 mb-9">We provide
-                    tailored workout programs and expert guidance to help you achieve your health and fitness goals.
-                    Train with professionals in a motivating, state-of-the-art environment.</p>
+                <p class="max-w-2xl mx-auto text-center text-base font-normal leading-7 text-gray-300 mb-9">Tarjoamme
+                    räätälöityjä harjoitusohjelmia ja asiantuntevaa ohjausta, jotka auttavat sinua saavuttamaan terveys-
+                    ja kuntotavoitteesi.
+                    Harjoittele ammattilaisten kanssa motivoivassa, huippuluokan ympäristössä.</p>
 
 
             </div>
@@ -155,30 +156,34 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
                 <div class="img-box">
-                    <img src="./Docs/Assets/me.jpg" alt="About Us tailwind page"
+                    <img src="../Docs/Assets/me.jpg" alt="About Us tailwind page"
                         class="max-lg:mx-auto w-full md:h-full rounded-lg object-cover">
                 </div>
                 <div class="lg:pl-[60px] flex items-center">
                     <div class="data w-full">
                         <h2
                             class=" font-bold text-4xl md:!leading-[1.3] lg:text-5xl text-gray-800 md:mb-9 mb-5 max-lg:text-center relative">
-                            About <span class="text-[#0a3a22]"> Me</span>
+                            Tietoja <span class="text-[#0a3a22]"> minusta</span>
                         </h2>
                         <p
                             class="font-normal md:text-lg md:leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
-                            I was born in 1983 in Prague, Czechoslovakia, and moved to Finland after high school. My
-                            coaching career began in 2003 when I started coaching a junior floorball team in my
-                            hometown. In 2012, I became a certified personal trainer (FAF Personal Trainer), and in
-                            2023, I began physiotherapy studies at Metropolia University of Applied Sciences.
+                            Synnyin vuonna 1983 Prahassa, Tšekkoslovakiassa ja muutin Suomeen lukion jälkeen. Minun
+                            valmentajan ura alkoi vuonna 2003, kun aloin valmentamaan juniorijoukkuetta
+                            salibandyjoukkueessani
+                            kotikaupunki. Vuonna 2012 minusta tuli sertifioitu personal trainer (FAF Personal Trainer)
+                            ja vuonna
+                            Vuonna 2023 aloitin fysioterapian opinnot Metropolia Ammattikorkeakoulussa.
                             <br><br>
-                            After becoming a personal trainer in 2012 through the Fitness Academy of Finland, I started
-                            working at Forever Hiekkaharju and later joined Fibaco, where I worked for 9 years. I
-                            founded my own business in 2017, renaming it Vacek Valmennus in 2022. That same year, I
-                            began my physiotherapy studies at Metropolia University of Applied Sciences.
+                            Päästyäni personal traineriksi vuonna 2012 Fitness Academy of Finlandin kautta aloitin
+                            työskennellyt Forever Hiekkaharjulla ja myöhemmin Fibacon palveluksessa, jossa työskentelin
+                            9 vuotta. minä
+                            perustin oman yrityksen vuonna 2017 ja nimesin sen uudelleen Vacek Valmennusksi vuonna 2022.
+                            Samana vuonna minä
+                            aloitin fysioterapian opinnot Metropolia Ammattikorkeakoulussa.
 
                             <br><br>
-                            I live in Myllypuro with my wife and three children, along with our two cats. My own
-                            training focuses mainly on calisthenics-style bodyweight exercises.
+                            Asun Myllypurossa vaimoni ja kolmen lapseni sekä kahden kissamme kanssa. Omani
+                            Harjoittelussa keskitytään pääosin kalisteniikkatyylisiin kehonpainoharjoituksiin.
                         </p>
                     </div>
                 </div>
@@ -192,19 +197,23 @@
 
                 <div class="lg:pr-24 flex items-center">
                     <div class="data w-full">
-                        <h2 class=" font-bold text-4xl lg:text-5xl text-gray-800 md:mb-9 mb-5 max-lg:text-center">Our
-                            <span class="text-[#0a3a22]">Commitment</span>
-                            to You
+                        <h2 class=" font-bold text-4xl lg:text-5xl text-gray-800 md:mb-9 mb-5 max-lg:text-center">Meidän
+                            <span class="text-[#0a3a22]">Sitoumus</span>
+                            Sinulle
                         </h2>
                         <p
                             class="font-normal md:text-lg md:leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
-                            I am committed to supporting my clients in the best possible way. My strength lies in
-                            connecting with people and fostering meaningful interactions. Each client is treated as an
-                            individual, with personalized coaching tailored to their specific needs and goals.
+                            Olen sitoutunut tukemaan asiakkaitani parhaalla mahdollisella tavalla. Voimani piilee
+                            olla yhteydessä ihmisiin ja edistää merkityksellistä vuorovaikutusta. Jokaista asiakasta
+                            kohdellaan
+                            henkilökohtaista valmennusta, joka on räätälöity heidän erityistarpeidensa ja tavoitteidensa
+                            mukaan.
                             <br><br>
-                            Modern technology offers valuable tools to support everyday life, such as apps for tracking
-                            sleep and activity, as well as mindfulness practices. These tools help clients develop
-                            routines and enhance their awareness of physical and mental well-being.
+                            Moderni tekniikka tarjoaa arvokkaita työkaluja jokapäiväisen elämän tueksi, kuten
+                            seurantasovelluksia
+                            unta ja aktiivisuutta sekä mindfulness-harjoituksia. Nämä työkalut auttavat asiakkaita
+                            kehittymään
+                            rutiineja ja lisää heidän tietoisuuttaan fyysisestä ja henkisestä hyvinvoinnista.
                         </p>
                     </div>
                 </div>
@@ -219,8 +228,8 @@
 
     <section class="md:pb-20 pb-12 md:pt-0 pt-8 bg-white">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 class="font-manrope text-4xl text-center text-gray-900 font-bold md:mb-14 mb-8">Measurable <span
-                    class="text-[#0a3a22]">Outcomes</span> You Can Track
+            <h2 class="font-manrope text-4xl text-center text-gray-900 font-bold md:mb-14 mb-8">Mitattavissa <span
+                    class="text-[#0a3a22]">Tulokset</span>, joita voit seurata
             </h2>
             <div class="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">
                 <!-- Progress Improvement Card -->
@@ -231,9 +240,10 @@
                             85%
                         </div>
                         <div class="flex-1">
-                            <h4 class="text-xl text-gray-900 font-semibold mb-2">Progress Improvement</h4>
-                            <p class="text-xs text-gray-500 leading-5">85% of our users report consistent growth within
-                                the first 3 months of following our tailored training plans.</p>
+                            <h4 class="text-xl text-gray-900 font-semibold mb-2">Edistyminen parantaminen</h4>
+                            <p class="text-xs text-gray-500 leading-5">85 % käyttäjistämme ilmoittaa jatkuvan kasvun
+                                sisällä
+                                ensimmäiset 3 kuukautta räätälöityjen koulutussuunnitelmiemme noudattamisen jälkeen.</p>
                         </div>
                     </div>
                 </div>
@@ -246,9 +256,10 @@
                             150+
                         </div>
                         <div class="flex-1">
-                            <h4 class="text-xl text-gray-900 font-semibold mb-2">Workout Completion</h4>
-                            <p class="text-xs text-gray-500 leading-5">Join over 150+ unique, dynamic workouts with
-                                completion tracking to monitor your fitness journey.</p>
+                            <h4 class="text-xl text-gray-900 font-semibold mb-2">Harjoituksen valmistuminen</h4>
+                            <p class="text-xs text-gray-500 leading-5">Liity yli 150 ainutlaatuiseen, dynaamiseen
+                                harjoitukseen
+                                valmistumisen seuranta seurataksesi kuntomatkaasi.</p>
                         </div>
                     </div>
                 </div>
@@ -261,9 +272,10 @@
                             95%
                         </div>
                         <div class="flex-1">
-                            <h4 class="text-xl text-gray-900 font-semibold mb-2">Nutrition Adherence</h4>
-                            <p class="text-xs text-gray-500 leading-5">95% of participants improved their health markers
-                                through personalized nutrition plans, tracked and optimized for results.</p>
+                            <h4 class="text-xl text-gray-900 font-semibold mb-2">Ravitsemuksen noudattaminen</h4>
+                            <p class="text-xs text-gray-500 leading-5">95 % osallistujista paransi terveysmerkkejään
+                                räätälöityjen ravitsemussuunnitelmien avulla, joita seurataan ja optimoidaan tuloksia
+                                varten.</p>
                         </div>
                     </div>
                 </div>
@@ -275,39 +287,47 @@
     <section class=" py-14 lg:py-24 bg-gray-50">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
             <div class="md:mb-16 mb-8 rounded-full">
-                <h2 class="text-4xl font-manrope font-bold text-gray-900 text-center">What our happy user says!</h2>
+                <h2 class="text-4xl font-manrope font-bold text-gray-900 text-center">Mitä iloinen käyttäjämme sanoo!
+                </h2>
             </div>
 
             <div class="swiper mySwiper w-full">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <p class="text-center text-gray-600">
-                            I have trained with Matej for about five years. During this time, I have come to know him
-                            as a smart, friendly, patient, and thoughtful trainer who genuinely listens to his clients
-                            and continuously seeks to improve himself. Matej puts real effort into designing the best
-                            possible training program for each individual. Since starting his physiotherapy studies, he
-                            has gained even more insight into coaching.
+                            Olen harjoitellut Matein kanssa noin viisi vuotta. Tänä aikana olen oppinut tuntemaan hänet
+                            älykäs, ystävällinen, kärsivällinen ja huomaavainen kouluttaja, joka aidosti kuuntelee
+                            asiakkaitaan
+                            ja pyrkii jatkuvasti parantamaan itseään. Matej panostaa todella parhaan suunnitteluun
+                            mahdollinen koulutusohjelma jokaiselle yksilölle. Fysioterapian opintojensa aloittamisesta
+                            lähtien hän
+                            on saanut entistä enemmän tietoa valmennuksesta.
                             <br><br>
-                            In training sessions, he pushes you to achieve the best performance you’re capable of at
-                            that moment—not more, but also not less. He always encourages you, especially when you feel
-                            like you didn’t do as well as you hoped. If you’re looking for a trainer whose sessions
-                            leave you going home with sore abs (either from laughing or from core exercises—sometimes
-                            both), but always in a better mood than when you arrived, Matej is the right choice!
+                            Harjoitteluissa hän työntää sinua saavuttamaan parhaan suorituskyvyn, johon pystyt
+                            sillä hetkellä – ei enempää, mutta ei myöskään vähempää. Hän rohkaisee sinua aina, varsinkin
+                            kun sinusta tuntuu
+                            kuin et mennyt niin hyvin kuin toivoit. Jos etsit valmentajaa, jonka harjoitukset
+                            jätä sinut kotiin kipeillä vatsalihaksilla (joko nauramisesta tai ydinharjoituksista –
+                            joskus
+                            molemmat), mutta aina paremmalla tuulella kuin saapuessasi, Matej on oikea valinta!
                             <span class="block text-center w-full font-semibold pt-8 text-lg text-gray-800">- Juha,
                                 56</span>
                         </p>
                     </div>
                     <div class="swiper-slide">
                         <p class="text-center text-gray-600">
-                            I grew up in a training environment where critique was the main method of coaching, so I
-                            tend to focus on flaws and shortcomings in everything I do. The most valuable thing I’ve
-                            gained from Matej’s coaching is the ability to train under an accepting and supportive
-                            approach—and to recognize the immense power of encouragement.
+                            Kasvoin koulutusympäristössä, jossa kritiikki oli tärkein valmennusmenetelmä, joten minä
+                            yleensä keskittyä puutteisiin ja puutteisiin kaikessa mitä teen. Arvokkain asia mitä minulla
+                            on
+                            Matein valmennuksesta saatu kyky harjoitella hyväksyvän ja tukevan alaisena
+                            lähestymistapaa – ja tunnistaa rohkaisun valtava voima.
                             <br><br>
-                            I have learned that while it’s important to acknowledge reality and be ambitious, focusing
-                            on strengths and positive reinforcement often leads to much greater progress than criticism
-                            ever could. And the best part? This lesson applies not just to training, but to life as a
-                            whole!
+                            Olen oppinut, että vaikka on tärkeää tunnustaa todellisuus ja olla kunnianhimoinen,
+                            keskittyä
+                            vahvuuksista ja positiivisesta vahvistamisesta johtaa usein paljon suurempaa edistymiseen
+                            kuin kritiikki
+                            koskaan voisi. Ja paras osa? Tämä oppitunti ei koske vain koulutusta, vaan elämää a
+                            koko!
 
                             <span class="block text-center w-full font-semibold pt-8 text-lg text-gray-800">- Elina, 57
                             </span>
@@ -315,11 +335,13 @@
                     </div>
                     <div class="swiper-slide">
                         <p class="text-center text-gray-600">
-                            Matej takes care of my well-being and work capacity by coaching me in skills where my
-                            progress has been incredible—things I never even knew I could do.
+                            Matej huolehtii hyvinvoinnistani ja työkyvystäni valmentamalla minua sellaisissa taidoissa,
+                            joissa minun
+                            edistyminen on ollut uskomatonta – asioita, joita en koskaan edes tiennyt pystyväni
+                            tekemään.
                             <br><br>
-                            Beyond maintaining physical fitness, Matej is incredibly friendly and, perhaps without even
-                            realizing it, contributes not only to muscle recovery but also to mental well-being!
+                            Fyysisen kunnon ylläpitämisen lisäksi Matej on uskomattoman ystävällinen ja ehkä jopa vailla
+                            sen ymmärtäminen edistää lihasten palautumisen lisäksi myös henkistä hyvinvointia!
                             <span class="block text-center w-full font-semibold pt-8 text-lg text-gray-800">- Mikki, 37
                             </span>
                         </p>
@@ -327,16 +349,16 @@
                     <div class="swiper-slide">
                         <p class="text-center text-gray-600">
 
-                            I have been training with Matej for about 12 years. He is very people-oriented and present
-                            in every session. Interacting with him is always rewarding. Matej takes care of the whole
-                            person—both body and mind!
-
+                            Olen harjoitellut Matein kanssa noin 12 vuotta. Hän on hyvin ihmisläheinen ja läsnä
+                            jokaisessa istunnossa. Vuorovaikutus hänen kanssaan on aina palkitsevaa. Matej huolehtii
+                            kokonaisuudesta
+                            ihminen – sekä keho että mieli!
                             <br><br>
-                            His professionalism is reflected in his genuine interest, solution-focused approach,
-                            excellent coaching skills, encouragement, motivation, support, acceptance, and flexibility
-                            in training times, locations, and methods.
+                            Hänen ammattitaitonsa näkyy hänen aidossa kiinnostuksessaan, ratkaisukeskeisyydessä,
+                            erinomaiset valmennustaidot, rohkaisu, motivaatio, tuki, hyväksyntä ja joustavuus
+                            harjoitusajoissa, -paikoissa ja -menetelmissä.
                             <br><br>
-                            I feel truly fortunate to have met a coach like Matej!
+                            Olen todella onnekas, että olen tavannut Matein kaltaisen valmentajan!
                             <span class="block text-center w-full font-semibold pt-8 text-lg text-gray-800">- Mirja, 79
                             </span>
                         </p>
@@ -352,9 +374,10 @@
     <section class="py-14 lg:py-24 ">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="md:mb-24 mb-8">
-                <h2 class="font-manrope text-4xl text-center font-bold text-gray-900 mb-6">Meet Our Expert Trainers</h2>
-                <p class="text-lg text-gray-500 text-center">Guiding You Every Step of the Way to Achieve Your Fitness
-                    Goals</p>
+                <h2 class="font-manrope text-4xl text-center font-bold text-gray-900 mb-6">Tutustu
+                    asiantuntijakouluttajiimme</h2>
+                <p class="text-lg text-gray-500 text-center">Opastaa sinua kuntosi saavuttamiseen jokaisessa vaiheessa
+                    Maalit</p>
             </div>
             <!--Slider Wrapper-->
             <div class="swiper teamswiper pb-10">
@@ -363,7 +386,7 @@
                         <div
                             class="group w-full flex-wrap flex items-center gap-8  transition-all duration-500 p-8  lg:flex-nowrap">
                             <div class=" w-full lg:w-48 h-64">
-                                <img src="./Docs/Assets/trainer-1.jpg" alt="image"
+                                <img src="../Docs/Assets/trainer-1.jpg" alt="image"
                                     class="rounded-2xl h-full object-cover mx-auto lg:mx-0 lg:w-full">
                             </div>
                             <div class="text-center lg:text-left lg:max-w-xs flex-1">
@@ -372,7 +395,8 @@
                                     <span class="text-sm text-gray-500 group-hover:text-[#293f33]">Trainer</span>
                                 </div>
                                 <p class="text-gray-500 leading-6 mb-7">
-                                    Specializes in strength training, pushing clients to achieve personal bests with customized workout plans
+                                    Erikoistunut voimaharjoitteluun, joka kannustaa asiakkaita saavuttamaan
+                                    henkilökohtaisia ​​huippuja räätälöityjen harjoitussuunnitelmien avulla
                                 </p>
                                 <div class="flex items-center gap-4 justify-center lg:justify-start">
                                     <p
@@ -411,7 +435,7 @@
                         <div
                             class="group w-full flex-wrap flex items-center gap-8 flex-col md:flex-row transition-all duration-500 p-8 lg:flex-nowrap">
                             <div class=" w-full lg:w-48 h-64 max-lg:max-w-[204px] max-lg:mx-auto">
-                                <img src="./Docs/Assets/trainer-2.jpg" alt="image"
+                                <img src="../Docs/Assets/trainer-2.jpg" alt="image"
                                     class="rounded-2xl h-full object-cover mx-auto lg:mx-0 lg:w-full">
                             </div>
                             <div class="text-center lg:text-left lg:max-w-xs flex-1 flex flex-col justify-between">
@@ -420,7 +444,8 @@
                                     <span class="text-sm text-gray-500 group-hover:text-[#293f33]">Trainer</span>
                                 </div>
                                 <p class="text-gray-500 leading-6 mb-7">
-                                    Focuses on mobility and flexibility, enhancing movement and preventing injuries through tailored routines
+                                    Keskittyy liikkuvuuteen ja joustavuuteen, tehostaa liikettä ja ehkäisee vammoja
+                                    räätälöityjen rutiinien avulla
                                 </p>
                                 <div
                                     class="flex items-center gap-4 justify-center lg:justify-start max-sm:bottom-0 relative">
@@ -460,7 +485,7 @@
                         <div
                             class="group w-full flex-wrap flex items-center gap-8  transition-all duration-500 p-8  lg:flex-nowrap">
                             <div class=" w-full lg:w-48 h-64">
-                                <img src="./Docs/Assets/trainer-3.jpg" alt="image"
+                                <img src="../Docs/Assets/trainer-3.jpg" alt="image"
                                     class="rounded-2xl h-full object-cover mx-auto lg:mx-0 lg:w-full">
                             </div>
                             <div class="text-center lg:text-left lg:max-w-xs flex-1">
@@ -469,7 +494,8 @@
                                     <span class="text-sm text-gray-500 group-hover:text-[#293f33]">Trainer</span>
                                 </div>
                                 <p class="text-gray-500 leading-6 mb-7">
-                                    An expert in endurance, guiding clients through challenging sessions to boost stamina and overall fitness
+                                    Kestävyyden asiantuntija, joka opastaa asiakkaita haastavien istuntojen läpi
+                                    parantaakseen kestävyyttä ja yleiskuntoa
                                 </p>
                                 <div class="flex items-center gap-4 justify-center lg:justify-start">
                                     <p
@@ -508,7 +534,7 @@
                         <div
                             class="group w-full flex-wrap flex items-center gap-8 flex-col md:flex-row transition-all duration-500 p-8 lg:flex-nowrap">
                             <div class=" w-full lg:w-48 h-64 max-lg:max-w-[204px] max-lg:mx-auto">
-                                <img src="./Docs/Assets/trainer-4.jpg" alt="image"
+                                <img src="../Docs/Assets/trainer-4.jpg" alt="image"
                                     class="rounded-2xl h-full object-cover mx-auto lg:mx-0 lg:w-full">
                             </div>
                             <div class="text-center lg:text-left lg:max-w-xs flex-1 flex flex-col justify-between">
@@ -517,7 +543,8 @@
                                     <span class="text-sm text-gray-500 group-hover:text-[#293f33]">Trainer</span>
                                 </div>
                                 <p class="text-gray-500 leading-6 mb-7">
-                                    Excels in recovery and rehabilitation, helping clients bounce back stronger with personalized care and training
+                                    Erinomaista palautumisessa ja kuntoutuksessa, mikä auttaa asiakkaita toipumaan
+                                    vahvemmiksi henkilökohtaisen hoidon ja koulutuksen avulla
                                 </p>
                                 <div
                                     class="flex items-center gap-4 justify-center lg:justify-start max-sm:bottom-0 relative">
@@ -583,25 +610,7 @@
         </div>
     </section>
 
-    <!-- <section class="md:py-20 py-8 " id="Subscribe">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="bg-[#293f33] rounded-2xl p-8 xl:p-11">
-                <h2 class="font-manrope text-4xl text-white text-center font-bold mb-4">Subscribe to the latest offer
-                </h2>
-                <p class="text-green-100 text-center mb-11 max-lg:max-w-2xl mx-auto">Join our community of subscribers
-                    and receive regular
-                    updates delivered straight to your inbox. It's quick, easy, and free</p>
-                <div
-                    class="max-w-md mx-auto lg:bg-transparent lg:border border-gray-300 rounded-3xl max-lg:py-3 lg:rounded-full lg:h-12 lg:p-1.5 lg:flex-row gap-6 lg:gap-0 flex-col flex items-center justify-between">
-                    <input type="text" name="email"
-                        class="py-2 px-6 bg-transparent rounded-full max-lg:border border-gray-300  text-gray-100 max-lg:text-center placeholder:text-gray-200 focus:outline-none flex-1 w-full lg:w-auto lg:py-2 lg:px-6 lg:bg-transparent"
-                        placeholder="Enter your email..">
-                    <button type="submit"
-                        class="py-2 px-5 text-sm bg-green-100 shadow-md rounded-full  text-gray-800 font-semibold ">Subscribe</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
+
 
     <!-- footer -->
 
@@ -611,39 +620,40 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 py-10 max-md:max-w-sm max-md:mx-auto">
                 <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
                     <a href="javascript:;" class="cursor-pointer flex justify-center lg:justify-start">
-                        <img src="./Docs/Assets/logo.png" class="h-16" alt="">
+                        <img src="../Docs/Assets/logo.png" class="h-16" alt="">
                     </a>
-                    <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Empowering your fitness
-                        journey with expert guidance and tailored workouts</p>
-                    <a href="./contactUs.html"
+                    <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Dynamisez votre parcours
+                        de remise en forme avec des conseils d'experts et des séances d'entraînement personnalisées</p>
+                    <a href="./Contact.html"
                         class="py-2.5 cursor-pointer px-5 h-9 block w-fit bg-[#0a3a22] rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-green-600 lg:mx-0">
-                        Contact us
+                        Contactez-nous
                     </a>
                 </div>
                 <!--End Col-->
                 <div class="lg:mx-auto">
-                    <h4 class="text-lg text-gray-900 font-medium mb-7 ">Quick Links</h4>
+                    <h4 class="text-lg text-gray-900 font-medium mb-7 ">Liens rapides</h4>
                     <ul class="text-sm  transition-all duration-500">
                         <li class="mb-3">
-                            <a href="./index.html" class="cursor-pointer text-gray-600 hover:text-gray-900">Home</a>
+                            <a href="./fi.html" class="cursor-pointer text-gray-600 hover:text-gray-900">Maison</a>
                         </li>
                         <li class="mb-3">
-                            <a href="./AboutUs.html" class="cursor-pointer  text-gray-600 hover:text-gray-900">About</a>
+                            <a href="./AboutUs.html" class="cursor-pointer  text-gray-600 hover:text-gray-900">À
+                                propos</a>
                         </li>
                         <li class="mb-3">
                             <a href="./Gallery.html"
-                                class="cursor-pointer  text-gray-600 hover:text-gray-900">Gallery</a>
+                                class="cursor-pointer  text-gray-600 hover:text-gray-900">Galerie</a>
                         </li>
                         <li>
-                            <a href="./services.html"
+                            <a href="./Services.html"
                                 class="cursor-pointer  text-gray-600 hover:text-gray-900">Services</a>
                         </li>
                     </ul>
                 </div>
-               
+
                 <!--End Col-->
                 <div class="lg:mx-auto">
-                    <h4 class="text-lg text-gray-900 font-medium mb-7">Contact Me</h4>
+                    <h4 class="text-lg text-gray-900 font-medium mb-7">Contactez-moi</h4>
                     <ul class="text-sm  transition-all duration-500">
                         <li class="mb-6">
                             <a href="tel:+358409654969" class="cursor-pointer  text-gray-600 hover:text-gray-900">+358
@@ -657,14 +667,15 @@
                         </li>
                     </ul>
                 </div>
-            
+
             </div>
             <!--Grid-->
             <div class="py-7 border-t border-gray-200">
                 <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
                     <span class="text-sm text-gray-500 ">Copyright © Vacek Valmennus 2024, All rights reserved.</span>
                     <div class="flex mt-4 space-x-4 sm:justify-center sm:mt-0 ">
-                        <a href="https://fi.linkedin.com/in/matej-vacek-8b482074?trk=people-guest_people_search-card" target="_blank"
+                        <a href="https://fi.linkedin.com/in/matej-vacek-8b482074?trk=people-guest_people_search-card"
+                            target="_blank"
                             class="flex items-center justify-center w-10 h-10 rounded-full border-[#0a3a22] text-[#0a3a22] border-2">
                             <i class="fa-brands fa-instagram text-2xl"></i>
                         </a>
@@ -681,11 +692,10 @@
 
 
 
-
     <!-- <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script> -->
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
