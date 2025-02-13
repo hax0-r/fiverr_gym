@@ -187,28 +187,28 @@
                     </div>
                 </div>
 
-                <div class="bg-green-50 lg:p-11 lg:rounded-r-2xl rounded-2xl">
+                <form action="https://api.web3forms.com/submit" method="POST" class="bg-green-50 lg:p-11 lg:rounded-r-2xl rounded-2xl">
                     <h2 class="text-[#293f33] font-manrope md:text-4xl text-3xl font-semibold leading-10 md:mb-11 mb-5">
                         Send Us A Message
                     </h2>
-
+                    <input type="hidden" name="access_key" value="a889cdb5-b8a9-420a-8daa-fced8f3bfb43">
                     <!-- Name Field -->
                     <input type="text"
                         class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4"
-                        placeholder="Name">
+                        placeholder="Name" required name="Name">
 
                     <!-- Phone Number Field -->
                     <input type="text"
                         class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4"
-                        placeholder="Phone Number">
+                        placeholder="Phone Number" required name="Phone_Number" >
 
                     <!-- Email Field -->
                     <input type="text"
                         class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4"
-                        placeholder="Email">
+                        placeholder="Email" required name="Email" >
 
                     <!-- How Did You Find This Page Field -->
-                    <select
+                    <select required name="How_did_you_find_this_page"
                         class="w-full h-12 text-gray-600 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4">
                         <option value="" disabled selected class="text-gray-400">How did you find this page?</option>
                         <option value="Recommendation">Recommendation</option>
@@ -217,7 +217,7 @@
                     </select>
 
                     <!-- Describe Your Situation Field -->
-                    <textarea rows="4"
+                    <textarea rows="4" required name="Briefly_describe_your_situation"
                         class="w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 pt-2 resize-none md:mb-6 mb-4"
                         placeholder="Briefly describe your situation"></textarea>
 
@@ -227,7 +227,7 @@
                         class="w-full h-12 text-white text-base font-semibold leading-6 rounded-lg transition-all duration-700 hover:bg-green-600 bg-[#293f33] shadow-sm">
                         Send
                     </button>
-                </div>
+                </form>
 
             </div>
     </section>
