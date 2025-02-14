@@ -14,16 +14,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
-    
 </head>
 
 <body>
+
     <div style="width: 0;" id="resNav"
         class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
         <div class="">
             <div class="flex p-5 items-center justify-between">
-                <a href="./fi.html">
-                    <img src="../Docs/Assets/logo.png" class="h-9" alt="">
+                <a href="./index.html">
+                    <img src="./Docs/Assets/logo.png" class="h-9" alt="">
                 </a>
                 <i id="closeNav" class="fa-solid fa-x text-xl"></i>
             </div>
@@ -31,7 +31,7 @@
             <div class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 justify-between h-[80vh] overflow-auto">
                 <ul class="  flex-col gap-8 flex ">
 
-                    <li> <a href="./fi.html" class="hover:text-[#0a3a22] transition-all duration-500">
+                    <li> <a href="./index.html" class="hover:text-[#0a3a22] transition-all duration-500">
                             Maison</a>
                     </li>
                     <li> <a href="./AboutUs.html" class="hover:text-[#0a3a22] transition-all duration-500">
@@ -84,15 +84,15 @@
     </div>
 
     <div class=" w-full"
-        style="background: linear-gradient(rgba(0, 0, 0, 0.768),rgba(0, 0, 0, 0.768)),url(../Docs/Assets/about-bg.webp) center/cover no-repeat;">
+        style="background: linear-gradient(rgba(0, 0, 0, 0.419),rgba(0, 0, 0, 0.405)),url(./Docs/Assets/contact.jpg) center/cover no-repeat;">
         <div class=" w-full">
             <div class="flex items-center justify-between max-w-7xl w-full mx-auto p-5">
-                <a href="./fi.html">
-                    <img src="../Docs/Assets/logo.png" class="md:h-16 h-12" alt="">
+                <a href="./index.html">
+                    <img src="./Docs/Assets/logo.png" class="md:h-16 h-12" alt="">
                 </a>
                 <div class="flex items-center gap-3">
                     <ul class="hidden items-center justify-center gap-8 lg:flex ">
-                        <li> <a href="./fi.html"
+                        <li> <a href="./index.html"
                                 class="hover:text-[#c0ffdd] text-white cursor-pointer transition-all duration-500">
                                 Maison</a>
                         </li>
@@ -107,8 +107,7 @@
                                 Galerie</a></li>
                         <a href="./Contact.html">
                             <button
-                                class="bg-transparent border border-2 border-white rounded-lg px-6 py-2.5 text-white font-medium hover:bg-white hover:text-black transition-all duration-500">Rejoignez-nous
-                                maintenant</button>
+                                class="bg-transparent border border-2 border-white rounded-lg px-6 py-2.5 text-white font-medium hover:bg-white hover:text-black transition-all duration-500">LIITY MUKAAN</button>
                         </a>
                     </ul>
                     <div class=" group cursor-pointer">
@@ -121,7 +120,7 @@
                         </div>
                         <div
                             class="border-2 rounded-lg overflow-hidden fadeIn  group-hover:block hidden  absolute border-white">
-                            <a href="../services.html"
+                            <a href="./En/contactUs.html"
                                 class="flex p-[7px] items-center gap-2 transition-all duration-500 hover:bg-[#ffffff27]">
                                 <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
                                 <p class="text-white">Us...</p>
@@ -138,11 +137,11 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
                 <h1
                     class="max-w-2xl mx-auto text-center  font-bold text-4xl  text-white mb-5 md:text-5xl md:leading-normal">
-                    <span class="text-[#c0ffdd]"> Asiantuntijapalvelumme </span>
+                    Ota yhteyttä <span class="text-[#c0ffdd]"> minuun </span>
                 </h1>
-                <p class="max-w-2xl mx-auto text-center text-base font-normal leading-7 text-gray-300 mb-9">Tutustu meidän
-                    valikoima räätälöityjä kuntoiluohjelmia, asiantuntijaharjoituksia ja hyvinvointipalveluita
-                    auttaa sinua saavuttamaan tavoitteesi</p>
+                <p class="max-w-2xl mx-auto text-center text-base font-normal leading-7 text-gray-300 mb-9">Onko
+                    kysymyksiä tai tarvitsetko henkilökohtaista kuntoiluneuvontaa? Tiimimme on täällä auttamassa sinua
+                    saavuttamaan tavoitteesi.</p>
 
 
             </div>
@@ -151,83 +150,89 @@
     </div>
 
 
-    <div class="bg-green-50 ">
-        <div class=" max-w-7xl md:pt-20 w-full mx-auto py-10">
-            <div class="container mx-auto px-4">
-                <h1 class="text-4xl font-bold text-center mb-8">Palvelumme</h1>
-
-                <!-- Service Card: Initial Assessment -->
-                <div class="bg-white p-6 rounded-2xl border border-green-200 mb-3 md:mb-6">
-                    <h2 class=" text-xl md :text-2xl font-semibold mb-2">Alkuarviointi ja taustaarviointi</h2>
-                    <p class="text-gray-600 italic mb-4">59 €/h, kerta per asiakas
-                    </p>
-                    <p class="text-gray-700">
-                        Ensimmäinen askel kohti valmennusta: arvioimme nykyisen kuntotasosi ja keskustelemme
-                        tavoitteistasi.
-                        Harjoitus voi tapahtua kuntosalilla, kotona, kahvilassa, ulkona tai etänä Teamsin tai Zoomin
-                        kautta.
-                    </p>
+    <section class="md:py-24 py-12">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 grid-cols-1">
+                <div class="lg:mb-0 mb-10">
+                    <div class="group w-full h-full">
+                        <div class="relative h-full">
+                            <img src="./Docs/Assets/contact2.jpg" alt="ContactUs tailwind section"
+                                class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-green-600 brightness-[.7] object-cover" />
+                            <h1 class="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">
+                                Ota yhteyttä</h1>
+                            <div class="absolute bottom-0 w-full lg:p-11 p-5">
+                                <div class="bg-white rounded-lg p-6 block">
+                                    <a href="tel:+0409654969" class="flex items-center mb-6">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z"
+                                                stroke="#293f33" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <h5 class="text-black text-base font-normal leading-6 ml-5">040 965 4969
+                                        </h5>
+                                    </a>
+                                    <a href="mailto:matej@vacek-valmennus.com" class="flex items-center">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.81501 8.75L10.1985 13.6191C12.8358 15.2015 14.1544 15.9927 15.6032 15.9582C17.0519 15.9237 18.3315 15.0707 20.8905 13.3647L27.185 8.75M12.5 25H17.5C22.214 25 24.5711 25 26.0355 23.5355C27.5 22.0711 27.5 19.714 27.5 15C27.5 10.286 27.5 7.92893 26.0355 6.46447C24.5711 5 22.214 5 17.5 5H12.5C7.78595 5 5.42893 5 3.96447 6.46447C2.5 7.92893 2.5 10.286 2.5 15C2.5 19.714 2.5 22.0711 3.96447 23.5355C5.42893 25 7.78595 25 12.5 25Z"
+                                                stroke="#293f33" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                        <h5 class="text-black text-base font-normal leading-6 ml-5">
+                                            matej@vacek-valmennus.com</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Service Card: Personal Training -->
-                <div class="bg-white p-6 rounded-2xl border border-green-200 mb-3 md:mb-6">
-                    <h2 class=" text-xl md :text-2xl font-semibold mb-2">Personal Training</h2>
-                    <p class="text-gray-600 italic mb-4">€99/h
-                    </p>
-                    <p class="text-gray-700">
-                        Henkilökohtainen valmennus tarpeidesi mukaan – voimaharjoittelu, liikkuvuus, kestävyys tai
-                        palautuminen.
-                        Tunnit pidetään Myllypuron Liikuntamyllyssä, Töölön Kisahallissa tai Itäkeskuksen uimahallissa
-                        kuntosali. Liikuntamyllyllä voimme hyödyntää myös sisäjuoksurataa.
-                    </p>
-                </div>
-
-                <!-- Service Card: Home Training -->
-                <div class="bg-white p-6 rounded-2xl border border-green-200 mb-3 md:mb-6">
-                    <h2 class=" text-xl md :text-2xl font-semibold mb-2">Kotikoulutus Helsingissä</h2>
-                    <p class="text-gray-600 italic mb-4">alkaen 109 €/h, loppuhinta riippuu sijainnista</p>
-                    <p class="text-gray-700">
-                        Jos kotoa poistuminen on haastavaa, tulen luoksesi. Tuon laadukasta koulutusta
-                        laitteita ja voi hyödyntää kotiympäristöäsi tehokkaasti.
-                    </p>
-                </div>
-
-                <!-- Service Card: Assisted Transportation -->
-                <div class="bg-white p-6 rounded-2xl border border-green-200 mb-3 md:mb-6">
-                    <h2 class=" text-xl md :text-2xl font-semibold mb-2">Avustettu kuljetus koulutustiloihin
+                <form action="https://api.web3forms.com/submit" method="POST" class="bg-green-50 lg:p-11 lg:rounded-r-2xl rounded-2xl">
+                    <h2 class="text-[#293f33] font-manrope md:text-4xl text-3xl font-semibold leading-10 md:mb-11 mb-5">
+                        Lähetä meille viesti
                     </h2>
-                    <p class="text-gray-600 italic mb-4">alkaen 109 €/h, loppuhinta riippuu sijainnista</p>
-                    <p class="text-gray-700">
-                        Jos tarvitset apua kuntosalille pääsemisessä, voin auttaa ja varmistaa, että pääset sinne
-                        turvallisesti.
-                    </p>
-                </div>
+                    <input type="hidden" name="access_key" value="a889cdb5-b8a9-420a-8daa-fced8f3bfb43">
+                    <!-- Name Field -->
+                    <input type="text"
+                        class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4"
+                        placeholder="Nimi" required name="Name">
 
-                <!-- Service Card: Remote Training -->
-                <div class="bg-white p-6 rounded-2xl border border-green-200 mb-3 md:mb-6">
-                    <h2 class=" text-xl md :text-2xl font-semibold mb-2">Etäkoulutus Teamsin kautta</h2>
-                    <p class="text-gray-600 italic mb-4">€89/h</p>
-                    <p class="text-gray-700">
-                        Täydellinen usein matkustaville tai kauempana asuville. Istunnot voidaan tehdä ilman
-                        laitteita tai käyttämällä sitä, mitä sinulla on jo kotona.
-                    </p>
-                </div>
+                    <!-- Phone Number Field -->
+                    <input type="text"
+                        class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4"
+                        placeholder="Puhelinnumero" required name="Phone_Number" >
 
-                <!-- Service Card: Outdoor Training -->
-                <div class="bg-white p-6 rounded-2xl border border-green-200">
-                    <h2 class=" text-xl md :text-2xl font-semibold mb-2">Ulkoiluharjoituksia Itä-Helsingissä</h2>
-                    <p class="text-gray-600 italic mb-4">€79/h</p>
-                    <p class="text-gray-700">
-                        Training in nature offers both physical and mental benefits. We can walk, run, cycle, or e-bike
-                        in areas like Viikki, Hallainvuori, Kivikko, Kulosaari, Herttoniemi, and Vanhakaupunki.
-                    </p>
-                </div>
+                    <!-- Email Field -->
+                    <input type="text"
+                        class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4"
+                        placeholder="Email" required name="Email" >
+
+                    <!-- How Did You Find This Page Field -->
+                    <select required name="How_did_you_find_this_page"
+                        class="w-full h-12 text-gray-600 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 md:mb-6 mb-4">
+                        <option value="" disabled selected class="text-gray-400">Miten löysit tämän sivun?</option>
+                        <option value="Recommendation">Suositus</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Other">muu</option>
+                    </select>
+
+                    <!-- Describe Your Situation Field -->
+                    <textarea rows="4" required name="Briefly_describe_your_situation"
+                        class="w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 pt-2 resize-none md:mb-6 mb-4"
+                        placeholder="Briefly describe your situation"></textarea>
+
+
+                    <!-- Send Button -->
+                    <button
+                        class="w-full h-12 text-white text-base font-semibold leading-6 rounded-lg transition-all duration-700 hover:bg-green-600 bg-[#293f33] shadow-sm">
+                        Lähetä
+                    </button>
+                </form>
 
             </div>
-        </div>
-    </div>
-
-
+    </section>
 
     <!-- footer -->
 
@@ -237,13 +242,13 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 py-10 max-md:max-w-sm max-md:mx-auto">
                 <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
                     <a href="javascript:;" class="cursor-pointer flex justify-center lg:justify-start">
-                        <img src="../Docs/Assets/logo.png" class="h-16" alt="">
+                        <img src="./Docs/Assets/logo.png" class="h-16" alt="">
                     </a>
                     <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Dynamisez votre parcours
                         de remise en forme avec des conseils d'experts et des séances d'entraînement personnalisées</p>
                     <a href="./Contact.html"
                         class="py-2.5 cursor-pointer px-5 h-9 block w-fit bg-[#0a3a22] rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-green-600 lg:mx-0">
-                        Contactez-nous
+                        ota meihin yhteyttä
                     </a>
                 </div>
                 <!--End Col-->
@@ -251,7 +256,7 @@
                     <h4 class="text-lg text-gray-900 font-medium mb-7 ">Liens rapides</h4>
                     <ul class="text-sm  transition-all duration-500">
                         <li class="mb-3">
-                            <a href="./fi.html" class="cursor-pointer text-gray-600 hover:text-gray-900">Maison</a>
+                            <a href="./index.html" class="cursor-pointer text-gray-600 hover:text-gray-900">Maison</a>
                         </li>
                         <li class="mb-3">
                             <a href="./AboutUs.html" class="cursor-pointer  text-gray-600 hover:text-gray-900">À
@@ -270,7 +275,7 @@
 
                 <!--End Col-->
                 <div class="lg:mx-auto">
-                    <h4 class="text-lg text-gray-900 font-medium mb-7">Contactez-moi</h4>
+                    <h4 class="text-lg text-gray-900 font-medium mb-7">ota meihin yhteyttä</h4>
                     <ul class="text-sm  transition-all duration-500">
                         <li class="mb-6">
                             <a href="tel:+358409654969" class="cursor-pointer  text-gray-600 hover:text-gray-900">+358
@@ -306,37 +311,12 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../Docs/Javascripts/global.js"></script>
-    <script>
-        // Get references to elements
-        const gallery = document.querySelector('.gallery');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImage = document.getElementById('lightbox-image');
-        const closeButton = document.getElementById('close');
-
-        // Add event listener to each image
-        gallery.addEventListener('click', e => {
-            if (e.target.classList.contains('gallery-image')) {
-                const imageSrc = e.target.src;
-                lightboxImage.src = imageSrc;
-                lightbox.style.display = 'flex';
-            }
-        });
-
-        // Close lightbox when close button is clicked
-        closeButton.addEventListener('click', () => {
-            lightbox.style.display = 'none';
-        });
-
-        // Close lightbox when clicking outside the image
-        lightbox.addEventListener('click', e => {
-            if (e.target === lightbox) {
-                lightbox.style.display = 'none';
-            }
-        });
-    </script>
+    <script src="./Docs/Javascripts/global.js"></script>
 </body>
 
 </html>
