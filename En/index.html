@@ -362,90 +362,176 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div
                 class="md:mb-14 mb-8 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8">
-                <h2 class="text-4xl text-center font-bold text-[#0a3a22] lg:text-left">Testimonials </h2>
-
+                <h2 class="md:text-4xl text-3xl text-center font-bold text-[#0a3a22] lg:text-left">Testimonials
+                </h2>
+                <!-- Slider controls -->
+                <div class="flex items-center gap-8">
+                    <button id="slider-button-left"
+                        class="swiper-button-prev group flex justify-center items-center border border-solid border-[#0a3a22] w-12 h-12 transition-all duration-500 rounded-full hover:bg-[#0a3a22] "
+                        data-carousel-prev>
+                        <svg class="h-6 w-6 text-[#0a3a22] group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button id="slider-button-right"
+                        class="swiper-button-next group flex justify-center items-center border border-solid border-[#0a3a22] w-12 h-12 transition-all duration-500 rounded-full hover:bg-[#0a3a22]"
+                        data-carousel-next>
+                        <svg class="h-6 w-6 text-[#0a3a22] group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="grid md:grid-cols-3 gap-5">
+            <!--Slider wrapper-->
+            <div class="lg:flex grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide group bg-white border border-solid h-auto border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[#0a3a22] slide-active:border-[#0a3a22]">
+                        <div
+                            class="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 transition-all duration-500 mb-9 group-hover:text-gray-800 ">
+                            I have trained with Matej for about five years. During this time, I have come to know him
+                            as a smart, friendly, patient, and thoughtful trainer who genuinely listens to his clients
+                            and continuously seeks to improve himself. Matej puts real effort into designing the best
+                            possible training program for each individual. Since starting his physiotherapy studies, he
+                            has gained even more insight into coaching.
+                            <br><br>
+                            In training sessions, he pushes you to achieve the best performance you’re capable of at
+                            that moment—not more, but also not less. He always encourages you, especially when you feel
+                            like you didn’t do as well as you hoped. If you’re looking for a trainer whose sessions
+                            leave you going home with sore abs (either from laughing or from core exercises—sometimes
+                            both), but always in a better mood than when you arrived, Matej is the right choice!
+                        </p>
+                        <h5
+                            class="text-gray-900 font-medium transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                            Juha, 56</h5>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[#0a3a22] slide-active:border-[#0a3a22]">
+                        <div
+                            class="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 transition-all duration-500 mb-9 group-hover:text-gray-800 ">
+                            I grew up in a training environment where critique was the main method of coaching, so I
+                            tend to focus on flaws and shortcomings in everything I do. The most valuable thing I’ve
+                            gained from Matej’s coaching is the opportunity to train under an accepting and supportive
+                            approach—and to recognize the immense power of encouragement.
+                            <br><br>
+                            I have learned that while it’s important to face the facts and be ambitious, focusing
+                            on strengths and positive reinforcement often leads to much greater progress than criticism
+                            ever could. And the best part? This lesson applies not just to training, but to life as a
+                            whole!
+                        </p>
+                        <div class="flex items-center gap-5">
+                            <h5
+                                class="text-gray-900 font-medium transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                                Elina, 57
+                            </h5>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[#0a3a22] slide-active:border-[#0a3a22]">
+                        <div
+                            class="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 transition-all duration-500 mb-9 group-hover:text-gray-800 ">
+                            Matej takes care of my well-being and work capacity by coaching me in skills where my
+                            progress has been incredible—things I never even knew I could do.
+                            <br><br>
+                            Beyond maintaining physical fitness, Matej is incredibly friendly and, perhaps without even
+                            realizing it, contributes not only to muscle recovery but also to mental well-being!
+                        </p>
+                        <div class="flex items-center gap-5">
+                            <h5
+                                class="text-gray-900 font-medium transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                                Mikki, 37</h5>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[#0a3a22] ">
+                        <div
+                            class="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 transition-all duration-500 mb-9 group-hover:text-gray-800 ">
+                            I have been training with Matej for about 12 years. He is very people-oriented and present
+                            in every session. Interacting with him is always rewarding. Matej takes care of the whole
+                            person—both body and mind!
 
-                <div class="bg-white p-6 rounded-2xl border border-green-200 ">
-
-                    <p class="text-gray-700">
-                        I have trained with Matej for about five years. During this time, I have come to know him
-                        as a smart, friendly, patient, and thoughtful trainer who genuinely listens to his clients
-                        and continuously seeks to improve himself. Matej puts real effort into designing the best
-                        possible training program for each individual. Since starting his physiotherapy studies, he
-                        has gained even more insight into coaching.
-                        <br><br>
-                        In training sessions, he pushes you to achieve the best performance you’re capable of at
-                        that moment—not more, but also not less. He always encourages you, especially when you feel
-                        like you didn’t do as well as you hoped. If you’re looking for a trainer whose sessions
-                        leave you going home with sore abs (either from laughing or from core exercises—sometimes
-                        both), but always in a better mood than when you arrived, Matej is the right choice!
-                    </p>
-                    <p class=" font-medium mt-2">Juha, 56</p>
+                            <br><br>
+                            His professionalism is reflected in his genuine interest, solution-focused approach,
+                            excellent coaching skills, encouragement, motivation, support, acceptance, and flexibility
+                            in training times, locations, and methods.
+                            <br><br>
+                            I feel truly fortunate to have met a coach like Matej!
+                        </p>
+                        <div class="flex items-center gap-5">
+                            <h5
+                                class="text-gray-900 font-medium transition-all duration-500 group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                                Mirja, 79
+                            </h5>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-[#0a3a22] ">
+                        <div
+                            class="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 transition-all duration-500 mb-9 group-hover:text-gray-800 ">
+                            Since movement is essential for older individuals as well, I started going to the gym
+                            towards the end of the last decade to maintain my mobility and quality of life. When my
+                            first trainer moved on to other work about four years ago, he recommended Matej to me. Since
+                            then, Matej has kept me moving during our regular sessions. We don’t just lift heavy
+                            weights, but the focus is largely on stretching, balance exercises, and strength training
+                            using my own body weight. Of course, every now and then we lift weights too, but in
+                            moderation. During the sessions, we also talk about everyday matters, and often we solve
+                            some of my IT-related problems as well. I can sincerely recommend Matej’s services to both
+                            younger and older individuals—he is a professional, punctual coach, and a pleasant person.
+                        </p>
+                        <div class="flex items-center gap-5">
+                            <h5
+                                class="text-gray-900 font-medium transition-all duration-500 group-hover:text-[#0a3a22] swiper-slide-active:text-[#0a3a22]">
+                                Pekka, 69 years old
+                            </h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-green-200 ">
-
-                    <p class="text-gray-700">
-                        Since movement is essential for older individuals as well, I started going to the gym
-                        towards the end of the last decade to maintain my mobility and quality of life. When my
-                        first trainer moved on to other work about four years ago, he recommended Matej to me. Since
-                        then, Matej has kept me moving during our regular sessions. We don’t just lift heavy
-                        weights, but the focus is largely on stretching, balance exercises, and strength training
-                        using my own body weight. Of course, every now and then we lift weights too, but in
-                        moderation. During the sessions, we also talk about everyday matters, and often we solve
-                        some of my IT-related problems as well. I can sincerely recommend Matej’s services to both
-                        younger and older individuals—he is a professional, punctual coach, and a pleasant person.
-                    </p>
-                    <p class=" font-medium mt-2">Pekka, 69 years old</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl border border-green-200 ">
-
-                    <p class="text-gray-700">
-                        I grew up in a training environment where critique was the main method of coaching, so I
-                        tend to focus on flaws and shortcomings in everything I do. The most valuable thing I’ve
-                        gained from Matej’s coaching is the opportunity to train under an accepting and supportive
-                        approach—and to recognize the immense power of encouragement.
-                        <br><br>
-                        I have learned that while it’s important to face the facts and be ambitious, focusing
-                        on strengths and positive reinforcement often leads to much greater progress than criticism
-                        ever could. And the best part? This lesson applies not just to training, but to life as a
-                        whole!
-                    </p>
-                    <p class=" font-medium mt-2">Elina, 57</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl border border-green-200 ">
-
-                    <p class="text-gray-700">
-                        I have been training with Matej for about 12 years. He is very people-oriented and present
-                        in every session. Interacting with him is always rewarding. Matej takes care of the whole
-                        person—both body and mind!
-
-                        <br><br>
-                        His professionalism is reflected in his genuine interest, solution-focused approach,
-                        excellent coaching skills, encouragement, motivation, support, acceptance, and flexibility
-                        in training times, locations, and methods.
-                        <br><br>
-                        I feel truly fortunate to have met a coach like Matej!
-                    </p>
-                    <p class=" font-medium mt-2">Mirja, 79</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl border border-green-200 ">
-
-                    <p class="text-gray-700">
-                        Matej takes care of my well-being and work capacity by coaching me in skills where my
-                        progress has been incredible—things I never even knew I could do.
-                        <br><br>
-                        Beyond maintaining physical fitness, Matej is incredibly friendly and, perhaps without even
-                        realizing it, contributes not only to muscle recovery but also to mental well-being!
-                    </p>
-                    <p class=" font-medium mt-2">Mikki, 37</p>
-                </div>
-
             </div>
-
         </div>
     </section>
+
+
 
     <!-- footer -->
 
@@ -541,6 +627,9 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 5000,
             },
             breakpoints: {
                 0: {
